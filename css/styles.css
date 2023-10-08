@@ -1,0 +1,148 @@
+:root {
+    --color-cloud: #F4F4FD;
+    --color-cornflower: #E7E9FC;
+    --color-iris: #4D5AE5;
+    --color-navy_blue: #2E2F42;
+    --color-white: #FFF;
+    --color-slate: #434455;
+    --color-ocean: #404BBF;
+    --color-green: #31D0AA;
+    --color-light_slate: #8E8F99;
+    --color-modal_blue: #2E2F4266;
+    --color-grey: #2E2F42;
+    --color-dairy: #FCFCFC;
+
+
+
+}
+
+body {
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+font-weight: 400;
+color: var(--color-slate);
+background-color: var(--color-white);
+}
+a {
+    text-decoration-line: none;
+    color: var(--color-slate);
+}
+
+a:hover,
+a:focus {
+    color: var(--color-ocean);
+}
+
+.btn_hero {
+    background: var(--color-iris);
+    color: var(--color-white);
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+ 
+        background: var(--color-ocean);
+        
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Section Header */
+.logo {
+    color: var(--color-iris);
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
+}
+
+.logo_dark{
+    color: var(--color-navy_blue);
+}
+
+.text_medium {
+    color: var(--color-navy_blue);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+
+.address_header {
+    font-style: normal;
+}
+
+.contacts-header {
+    color: var(--color-slate);
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+
+/* Section Heero */
+.hero {
+    background-color: var(--color-navy_blue);
+}
+
+.hero-title {
+    color: var(--color-white);
+    text-align: center;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
+    letter-spacing: 1.12px;
+}
+
+/* Section Our Preferences */
+
+.title-secondary {
+    color: var(--color-navy_blue);
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+.title-thirdly {
+    color: var(--color-navy_blue);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+.text_primary {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.bg-light {
+    background-color: var(--color-cloud);
+}
+
+.cart_team {
+    background-color: var(--color-white);
+}
+/* footer */
+
+.bg_dark {
+    background-color: var(--color-navy_blue);
+}
+.logo_light {
+    color: var(--color-cloud);
+}
+
+.text_footer {
+    color: var(--color-cloud);
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
