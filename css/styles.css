@@ -342,7 +342,16 @@ button:focus {
     line-height: 1.5;
     letter-spacing: 0.32px;
    }
-   a.logo {
+  .logo-footer {
     display: inline-block;
     margin-bottom: 16px;
+    height: 24px;
+    flex-shrink: 0;
+    color: var(--color-iris);
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.54px;
+    text-transform: uppercase;
    }
