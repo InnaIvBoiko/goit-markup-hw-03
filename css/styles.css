@@ -135,6 +135,9 @@ img {
 .page-header-list {
     display: flex;
     gap: 40px;
+}
+
+.page-header-item {
     padding: 24px 0;
 }
 
