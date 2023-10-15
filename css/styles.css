@@ -79,13 +79,12 @@ img {
     display: block;
 }
 
-.conteiner {
+.container {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    /* justify-content: space-between; */
 }
 
 .title-secondary {
@@ -96,7 +95,7 @@ img {
     line-height: 1.11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .title-thirdly {
@@ -105,7 +104,7 @@ img {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .text_primary {
@@ -118,8 +117,6 @@ img {
 
 .page-header {
     border-bottom: 1px solid var(--color-cornflower);
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .row {
@@ -132,12 +129,13 @@ img {
 .page-nav {
     display: flex;
     flex-direction: row;
-    gap: 76px;
+    align-items: center;
 }
 
 .page-header-list {
     display: flex;
     gap: 40px;
+    padding: 24px 0;
 }
 
 .address-header {
@@ -169,6 +167,7 @@ img {
     line-height: 1.17;
     letter-spacing: 0.54px;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .logo_dark {
@@ -183,7 +182,7 @@ img {
     letter-spacing: 0.32px;
 }
 
-/* Section Heero */
+/* Section 1 Heero */
 
 .hero {
     background-color: var(--color-navy_blue);
@@ -199,7 +198,7 @@ img {
 
 
 .hero-title {
-    width: 496px;
+    max-width: 496px;
     color: var(--color-white);
     text-align: center;
     font-size: 56px;
@@ -209,10 +208,13 @@ img {
 }
 
 .btn_hero {
-    display: inline-flex;
+    display: block;
+    min-width: 169px;
+    height: 56px;
     padding: 16px 32px;
     align-items: flex-start;
     gap: 10px;
+    border: none;
     border-radius: 4px;
     background: var(--color-iris);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -228,7 +230,7 @@ button:focus {
     background: var(--color-ocean);
 }
 
-/* Section Our Preferences */
+/* Section 2 Our Preferences */
 
 .preferences {
     padding-top: 120px;
@@ -244,7 +246,20 @@ button:focus {
    flex-basis: calc((100% - 72px) / 4);
 }
 
-/* Section Our Team */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Section 3 Our Team */
 
 .our-team {
     padding-top: 120px;
@@ -263,15 +278,19 @@ button:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 32px;
+    flex-basis: calc((100% - 3 * 24px) / 4);
     border-radius: 0px 0px 4px 4px;
     background: var(--WHITE, #FFF);
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    padding-bottom: 32px;
     text-align: center;
 }
 
-/* Section Our Portfolio */
+.info-team {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+/* Section  4 Our Portfolio */
 
 .portfolio {
     padding-top: 120px;
@@ -281,26 +300,27 @@ button:focus {
 .portfolio-cart {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .portfolio-cart-item {
     display: flex;
-    width: 360px;
+    width: calc((100% - 48px) / 3);
     height: 420px;
     padding-bottom: 0px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 32px;
     flex-shrink: 0;
-    border: 1px solid var(--color-cornflower);
     background: var(--color-white);
     padding-bottom: 32px;
 }
 
 .portfolio-cart-info {
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 32px 16px;
+    border: 1px solid var(--color-cornflower);
+    border-top: none;
+    align-self: stretch;
 }
 /* footer */
 
@@ -318,5 +338,8 @@ button:focus {
     color: var(--color-cloud);
     line-height: 1.5;
     letter-spacing: 0.32px;
-    padding-top: 16px;
-}
+   }
+   a.logo {
+    display: inline-block;
+    margin-bottom: 16px;
+   }
